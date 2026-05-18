@@ -11,6 +11,7 @@ profile:
   more_info:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
+patents: true # shows a Patents section (TBD placeholder)
 social: true # includes social icons at the bottom of the page
 
 announcements:
