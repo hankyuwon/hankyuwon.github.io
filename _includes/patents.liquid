@@ -1,0 +1,31 @@
+<div class="patents">
+  <h2>Patents</h2>
+  {% if site.data.patents %}
+    <div class="patent-list">
+      {% for patent in site.data.patents %}
+        <div class="patent-entry" style="margin-bottom: 2.5rem;">
+          <div class="patent-header" style="margin-bottom: 0.5rem; color: var(--global-text-color);">
+            <span style="font-weight: 600;">{{ patent.number }}</span>
+            <span style="color: var(--global-text-color-light); margin-left: 1rem;">
+              {{ patent.date }} ({{ patent.status }})
+            </span>
+          </div>
+          <div class="patent-titles" style="font-size: 0.95rem; line-height: 1.7;">
+            <div><strong>[KOR]</strong> {{ patent.title_kor }}</div>
+            <div><strong>[ENG]</strong> {{ patent.title_eng }}</div>
+          </div>
+          {% if patent.inventors or patent.applicant %}
+            <div class="patent-info" style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--global-text-color-light); line-height: 1.6;">
+              {% if patent.inventors %}
+                <div>{{ patent.inventors }}</div>
+              {% endif %}
+              {% if patent.applicant %}
+                <div>{{ patent.applicant }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

@@ -65,10 +65,11 @@ layout: default
     {% endif %}
 
     <!-- Patents -->
-    {% if page.patents %}
-      <h2>Patents</h2>
-      <p>TBD</p>
-    {% endif %}
+    <div style="margin-top: 5rem;">
+      {% if page.patents %}
+        {% include patents.liquid %}
+      {% endif %}
+    </div>
 
     <!-- Social -->
     {% if page.social %}
