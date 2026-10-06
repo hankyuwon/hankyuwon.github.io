@@ -1,0 +1,20 @@
+<div class="awards">
+  <h2>Awards and Scholarships</h2>
+  {% if site.data.awards %}
+    <div class="award-list">
+      {% for award in site.data.awards %}
+        <div class="award-entry" style="margin-bottom: 1.5rem;">
+          <div style="color: var(--global-text-color);">
+            <span style="font-weight: 600;">{{ award.title }}</span>
+            <span style="color: var(--global-text-color-light); margin-left: 1rem;">{{ award.date }}</span>
+          </div>
+          {% if award.info %}
+            <div style="font-size: 0.9rem; color: var(--global-text-color-light); line-height: 1.6;">
+              {{ award.info }}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

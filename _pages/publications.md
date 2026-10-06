@@ -11,8 +11,8 @@ nav_order: 2
 
 <div class="publications">
 
-<h2>Preprints</h2>
-{% bibliography --group_by none --query @*[abbr=Preprint]* %}
+<h2>Under Review</h2>
+{% bibliography --group_by none --query @*[review=true]* %}
 
 <h2>Conferences</h2>
 {% bibliography --group_by none --query @*[abbr=Conference]* %}

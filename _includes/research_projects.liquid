@@ -1,0 +1,16 @@
+<div class="research-projects">
+  <h2>Projects</h2>
+  {% if site.data.research_projects %}
+    <div class="research-project-list">
+      {% for project in site.data.research_projects %}
+        <div class="research-project-entry" style="margin-bottom: 1.5rem;">
+          <div style="font-weight: 600; color: var(--global-text-color);">{{ project.title }}</div>
+          <div style="font-size: 0.9rem; color: var(--global-text-color-light); line-height: 1.6;">
+            {{ project.agency }}
+            {% if project.period %}· {{ project.period }}{% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

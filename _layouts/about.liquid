@@ -64,12 +64,26 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Projects -->
+    {% if page.research_projects %}
+      <div style="margin-top: 5rem;">
+        {% include research_projects.liquid %}
+      </div>
+    {% endif %}
+
     <!-- Patents -->
     <div style="margin-top: 5rem;">
       {% if page.patents %}
         {% include patents.liquid %}
       {% endif %}
     </div>
+
+    <!-- Awards and Scholarships -->
+    {% if page.awards %}
+      <div style="margin-top: 5rem;">
+        {% include awards.liquid %}
+      </div>
+    {% endif %}
 
     <!-- Social -->
     {% if page.social %}

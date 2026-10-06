@@ -6,12 +6,14 @@ subtitle:
 
 profile:
   align: right
-  image: gyuwon_pic.jpg
+  image: gyuwon_rec.jpg
   image_circular: false # crops the image to make it circular
   more_info:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
+research_projects: true # shows a Projects section from _data/research_projects.yml
 patents: true # shows a Patents section (TBD placeholder)
+awards: true # shows an Awards and Scholarships section from _data/awards.yml
 social: true # includes social icons at the bottom of the page
 
 announcements:
